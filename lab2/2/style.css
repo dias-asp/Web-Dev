@@ -1,0 +1,107 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#img{
+    height: 500px;
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+#Main_page{
+    width: 400px;
+    position: absolute;
+    top: 12%;
+    left: 45%;
+}
+#Enter_page{
+    border: 2px solid lightgray;
+    /*display: flex;*/
+    align-content: center;
+    justify-content: center;
+}
+
+#logo{
+    width: 170px;
+    align-self: center;
+    padding-left: 50px;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid lightgray;
+    background: rgba(240, 240, 240, 80%);
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background: dodgerblue;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover{
+    background: blue;
+    cursor: pointer;
+}
+
+.palka{
+    border: 1px solid lightgray;
+    width: 70px;
+    margin-top: 10px;
+}
+
+.ILI {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ILI p {
+    margin-top: 20px;
+    color: dimgray;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#facebook_logo{
+    width: 20px;
+    margin-top: 15px;
+}
+
+.facebook a{
+    text-decoration: none;
+    color: dodgerblue;
+    margin-left: 5px;
+}
+
+#Parol{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#Parol a{
+    text-decoration: none;
+    color: midnightblue;
+}
+
+#create_account{
+    margin-top: 10px;
+    border: 2px solid lightgray;
+}
+
+#create_account p{
+    text-align: center;
+    color: dimgray;
+    font-weight: bold;
+}
+
