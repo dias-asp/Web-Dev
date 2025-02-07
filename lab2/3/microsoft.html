@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-banner {
+      background-color: #0078D4;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    .top-banner a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #top-links{
+      list-style: none;
+      margin-left: 100px;
+      margin-top: 15px;
+    }
+    #top-links li {
+      display: inline;
+      padding: 10px;
+    }
+    #top-links a {
+      color: black;
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .top-header {
+    }
+    #microsoft-logo {
+      width: 100px;
+      position: absolute;
+      top:10px;
+      left: 25px;
+    }
+
+    .hero {
+      position: relative;
+      text-align: left;
+      color: black;
+    }
+
+    .hero img {
+      width: 100%;
+      display: block;
+    }
+
+    .hero-text {
+      position: absolute;
+      width: 500px;
+      top: 20%;
+      left: 10%;
+      background: white;
+      padding: 20px;
+      padding-right: 100px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #0078D4;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+      padding-bottom: 0;
+    }
+    #images {
+      margin-left: 20px;
+      margin-top: 40px;
+      margin-bottom: 0;
+      gap: 125px;
+    }
+
+    .categories a {
+      color: #0078D4;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .product {
+      width: 310px;
+      height: 500px;
+      border: 1px solid #ddd;
+      display: flex; /* Делаем flex-контейнер */
+      flex-direction: column; /* Располагаем содержимое вертикально */
+      justify-content: flex-start; /* Содержимое по умолчанию располагается сверху */
+      align-items: flex-start; /* Выравнивание по левому краю */
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+    .product img {
+      height: 180px;
+      width: 100%;
+    }
+    .product h2 {
+      margin-top: 40px;
+      margin-left: 20px;
+    }
+    .product p {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .product a {
+      margin-top: auto;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    #switches {
+      margin-left: 800px;
+    }
+    #switches_img {
+      width: 200px;
+    }
+
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="top-header">
+    <img src="https://indico.cern.ch/event/1175020/attachments/2563717/4433359/Microsoft.jpg" alt="Microsoft Logo" id="microsoft-logo">
+    <ul id="top-links">
+      <li><a href="#">Microsoft 365</a></li>
+      <li><a href="#">Teams</a></li>
+      <li><a href="#">Copilot</a></li>
+      <li><a href="#">Windows</a></li>
+      <li><a href="#">Surface</a></li>
+      <li><a href="#">Xbox</a></li>
+      <li><a href="#">Deals</a></li>
+      <li><a href="#">Small Business</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </div>
+  <div class="top-banner">Pay your way, with flexible payment options available at checkout. <a href="#">Learn more ></a></div>
+</header>
+<main>
+  <section class="hero">
+    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-AI-7Ed-001-ROW:VP5-1920x600" alt="Copilot + PC">
+    <div class="hero-text">
+      <h1>Meet Surface Pro</h1>
+      <p>This laptop’s unrivaled flexibility and AI features like Live Captions and Cocreator enable you to do more than you ever imagined.</p>
+      <a href="#" class="button">Shop now</a>
+    </div>
+  </section>
+  <div id="switches">
+    <img src="img.png" id="switches_img">
+  </div>
+  <div class="categories" id="images">
+    <img src="img_1.png">
+    <img src="img_2.png">
+    <img src="img_3.png">
+    <img src="img_4.png">
+    <img src="img_5.png">
+    <img src="img_6.png">
+
+  </div>
+  <div class="categories">
+    <a href="#">Shop Surface devices</a>
+    <a href="#">Shop Xbox games and consoles</a>
+    <a href="#">Shop for accessories</a>
+    <a href="#">Shop for your business</a>
+    <a href="#">Find your next PC</a>
+    <a href="#">Choose your Microsoft 365</a>
+  </div>
+  <section class="products">
+    <div class="product">
+      <img src="https://asset.kompas.com/crops/84_HESAyetwqM9h9XxbXhSKrK2I=/99x0:1449x900/750x500/data/photo/2024/05/21/664c06c249226.jpg" alt="Surface Laptop">
+      <h2>Surface Laptop, Copilot+ PC</h2>
+      <p>Unlock AI features like Live Captions and Cocreator with this exceptionally powerful laptop.</p>
+      <a href="#" class="button">Shop now</a>
+    </div>
+    <div class="product">
+      <img src="https://ispot.ru/upload/iblock/fec/gyv06jrr0nexpwtez9efe5iz62xip6kb/attouv5x3qurbls0hzn2idglvrfsoyqj.jpg" alt="Xbox Series S">
+      <h2>Xbox Series S</h2>
+      <p>Next-gen performance in the smallest Xbox ever.</p>
+      <a href="#" class="button">Shop Xbox Series S</a>
+    </div>
+    <div class="product">
+      <img src="https://www.gamespot.com/a/uploads/screen_kubrick/1179/11799911/3810689-screenshot2021-03-22at10.09.17am.png" alt="Xbox controllers">
+      <h2>Xbox controllers</h2>
+      <p>Elite, wireless, adaptive—find the controller that fits your style of play.</p>
+      <a href="#" class="button">Shop now</a>
+    </div>
+    <div class="product">
+      <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Developer-Direct-2024?wid=834&hei=470&fit=crop" alt="Developer Direct">
+      <h2>Xbox presents Developer_Direct</h2>
+      <p>Tune in January 23 at 10 AM PT to hear directly from the developers.</p>
+      <a href="#" class="button">Learn more</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
