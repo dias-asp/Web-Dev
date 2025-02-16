@@ -4,15 +4,13 @@ const todoList = document.getElementById('list');
 
 
 addButton.addEventListener('click', () => {
-    const taskText = todoInput.value.trim(); // Убираем лишние пробелы
+    const taskText = todoInput.value.trim();
     if (taskText === '') {
         return;
     }
 
-    // Создаем элемент <li>
     const newTask = document.createElement('li');
 
-    // Добавляем текст задачи
     newTask.innerHTML = `
     <div class="item">
       <input type="checkbox" class="done">
@@ -21,20 +19,15 @@ addButton.addEventListener('click', () => {
     </div>
   `;
 
-    // Добавляем задачу в список
     todoList.appendChild(newTask);
 
-    // Очищаем поле ввода
     todoInput.value = '';
 
-    // Обновляем функциональность задач
     updateTaskActions();
 });
 
 
-// Функция для обновления действий по задачам
 function updateTaskActions() {
-    // Обработка отметки "сделано"
     const checkboxes = todoList.querySelectorAll('.done');
     checkboxes.forEach((checkbox) => {
         checkbox.addEventListener('change', (e) => {
@@ -43,7 +36,6 @@ function updateTaskActions() {
         });
     });
 
-    // Удаление задачи
     const deleteButtons = todoList.querySelectorAll('.delete-button');
     deleteButtons.forEach((button) => {
         button.addEventListener('click', (e) => {
@@ -53,5 +45,4 @@ function updateTaskActions() {
     });
 }
 
-// Начальная инициализация
 updateTaskActions();
