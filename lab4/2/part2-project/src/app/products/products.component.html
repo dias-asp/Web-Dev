@@ -1,0 +1,19 @@
+<div class="products">
+  <div class="product" *ngFor="let product of products">
+    <img [src]="product.image" alt="{{ product.name }}" class="product-image">
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <p><b>Rating:</b> {{ product.rating }}</p>
+    <a [href]="product.link" target="_blank" class="link">View Product</a>
+    <div class="share-buttons">
+      <button (click)="shareToWhatsApp(product.link)" style="background-color: #25D366;">
+        <img src="https://www.citypng.com/public/uploads/preview/outline-whatsapp-wa-watsup-green-logo-icon-symbol-sign-png-701751695124303npsmzlcjyh.png">
+        Share to WhatsApp
+      </button>
+      <button (click)="shareToTelegram(product.link)" style="background-color: #0088CC;">
+        <img src="https://w7.pngwing.com/pngs/772/115/png-transparent-computer-icons-telegram-logo-angle-white-triangle-thumbnail.png">
+        Share to Telegram
+      </button>
+    </div>
+  </div>
+</div>

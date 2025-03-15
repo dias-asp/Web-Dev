@@ -1,0 +1,13 @@
+<div class="categories">
+  <h1>Categories</h1>
+  <ul>
+    <li *ngFor="let category of categories" (click)="selectCategory(category)">
+      {{ category.name }}
+    </li>
+  </ul>
+</div>
+
+<div class="product-list" *ngIf="selectedCategory">
+  <h2>Products in {{ selectedCategory.name }}</h2>
+  <app-product-list [products]="selectedCategory.products"></app-product-list>
+</div>
