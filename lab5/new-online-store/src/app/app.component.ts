@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { Category } from './product.model';
+import {Category, Product} from './product.model';
 import {ProductListComponent} from './product-list/product-list.component';
 import {NgForOf, NgIf} from '@angular/common';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -14,14 +15,14 @@ import {NgForOf, NgIf} from '@angular/common';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'new-online-store';
+  title = 'new-online-store';/*
   categories: Category[] = [
     {
       id: 1,
       name: 'Mouses',
       products: [
         { id: 1, name: 'Logitech G Pro X Superlight', description: 'Лучшая игровая мышь 2022 года', image: 'https://resources.cdn-kaspi.kz/img/m/p/h90/h02/64222437474334.jpg?format=preview-large', rating: 5.0, likes: 0, link: 'https://kaspi.kz/shop/p/logitech-g-pro-x-superlight-belyi-102712667/?c=750000000' },
-        { id: 2, name: 'Logitech G Pro X Superlight 2', description: 'Лучшая игровая мышь 2024 года', image: 'https://resources.cdn-kaspi.kz/img/m/p/h0e/h87/84212515864606.png?format=preview-large', rating: 5.0, likes: 0, link: 'https://kaspi.kz/shop/p/logitech-g-pro-x-superlight-2-belyi-113958121/?c=750000000' },
+        { id: 2, name: 'Logitech G Pro X Superlight 2', description: 'Лучшая игровая мышь 2024 года', image: 'https://resources.cdn-kaspi.kz/img/m/p/h0e/h87/84212515864606.png?format=preview-large', rating: 5.0, likes: 10, link: 'https://kaspi.kz/shop/p/logitech-g-pro-x-superlight-2-belyi-113958121/?c=750000000' },
         { id: 3, name: 'VGN Dragonfly F1 Moba', description: 'Хорошая бюджетная мышь', image: 'https://resources.cdn-kaspi.kz/img/m/p/h89/h4b/84048997548062.jpg?format=preview-large', rating: 4.9, likes: 0, link: 'https://kaspi.kz/shop/p/vgn-dragonfly-f1-moba-belyi-113546032/?c=750000000'},
         { id: 4, name: 'Razer DeathAdder V3 Pro', description: 'Хороший соперник от Razer', image: 'https://resources.cdn-kaspi.kz/img/m/p/h0b/hec/67863260069918.jpg?format=preview-large', rating: 4.9, likes: 0, link: 'https://kaspi.kz/shop/p/razer-deathadder-v3-pro-belyi-108434841/?c=750000000'},
         { id: 5, name: 'Steelseries Sensei Ten', description: 'Возрождение легендарной мышки из прошлого', image: 'https://resources.cdn-kaspi.kz/img/m/p/hbc/h69/63840160546846.jpg?format=preview-large', rating: 4.8, likes: 0, link: 'https://kaspi.kz/shop/p/steelseries-sensei-ten-belyi-108434841/?c=750000000'}
@@ -60,8 +61,21 @@ export class AppComponent {
         { id: 5, name: 'Akko Radiant Red', description: 'Кастомные свитчи, аналогия всех красных', image: 'https://resources.cdn-kaspi.kz/img/m/p/hc0/hc5/68439668129822.jpg?format=preview-large', rating: 4.7, likes: 0, link: 'https://kaspi.kz/shop/p/akko-custom-switch-radiant-red-krasnyi-108667684/?c=750000000'}
       ]
     }
-    // Two more categories
-  ];
+  ];*/
+
+  products: Product[] = [];
+  categories: Category[] = [];
+
+  constructor(private http: HttpClient) {
+
+  }
+
+  addProduct(name: string, ): void {
+    this.http.post('https://kaspi.kz/api/v1/products',
+      {
+
+      })
+  }
 
   selectedCategory: Category | null = null;
 

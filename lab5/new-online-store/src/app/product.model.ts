@@ -1,15 +1,14 @@
-export interface Product {
-  id: number;
-  name: string;
-  description: string;
-  image: string;
-  rating: number;
-  likes: number;
-  link: string;
-}
-
 export interface Category {
   id: number;
   name: string;
-  products: Product[];
+}
+
+export interface Product {
+  id: number;
+  name: string;
+  price: number;
+  description: string;
+  count: number;
+  isActive: boolean;
+  category: Category;
 }

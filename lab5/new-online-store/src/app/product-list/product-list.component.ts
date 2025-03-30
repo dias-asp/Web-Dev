@@ -15,13 +15,15 @@ import {NgForOf} from '@angular/common';
 export class ProductListComponent {
   @Input() products: Product[] = [];
 
-  // Метод для увеличения количества лайков
   like(productId: number): void {
     const index = this.products.findIndex(product => product.id === productId);
-    this.products[index].likes += 1; // Увеличиваем количество лайков
+    // this.products[index].likes += 1;
+  }
+  unlike(productId: number): void {
+    const index = this.products.findIndex(product => product.id === productId);
+    // this.products[index].likes -= 1;
   }
 
-  // Метод для удаления продукта
   remove(productId: number): void {
     this.products = this.products.filter(product => product.id !== productId);
   }
