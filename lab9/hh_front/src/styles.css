@@ -1,0 +1,54 @@
+/* Global site styles */
+
+/* General body settings */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Header (App title) styling */
+h1 {
+  text-align: center;
+  color: #2c6ed5;
+  margin-top: 20px;
+}
+
+h2, h3 {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Utility classes for spacing */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* List default styles */
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Highlight list items on hover */
+li {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background-color: #fefefe;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #eaf1ff;
+  border-color: #2c6ed5;
+}

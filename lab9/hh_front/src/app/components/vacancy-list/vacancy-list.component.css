@@ -1,0 +1,28 @@
+/* vacancy-list.component.css */
+
+/* Title styling */
+h3 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Vacancy list styling */
+ul {
+  margin-top: 15px;
+  padding: 0;
+}
+
+li {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fefefe;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+li:hover {
+  background-color: #ffeeff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

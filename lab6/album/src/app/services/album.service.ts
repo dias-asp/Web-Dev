@@ -18,4 +18,7 @@ export class AlbumService {
   getAlbumById(id: number): { userId: number; id: number; title: string } | undefined {
     return this.albums.find((album) => album.id === id);
   }
+  updateAlbums(album : {userId: number, id: number, title: string}){
+
+  }
 }

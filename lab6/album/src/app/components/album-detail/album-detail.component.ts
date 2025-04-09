@@ -27,7 +27,6 @@ export class AlbumDetailComponent{
   }
 
   saveAlbum(): void {
-    // Здесь обновляем альбом, но в статичных данных это будет только объект в памяти
     alert('Album was saved successfully!');
   }
 

@@ -66,15 +66,25 @@ export class AppComponent {
   products: Product[] = [];
   categories: Category[] = [];
 
+  private BASE_URL = 'http://127.0.0.1:8000/api'
+
   constructor(private http: HttpClient) {
 
   }
 
-  addProduct(name: string, ): void {
-    this.http.post('https://kaspi.kz/api/v1/products',
+  addProduct(): void {
+    this.http.post(this.BASE_URL + '/products',
       {
 
       })
+  }
+
+  loadProducts(): void {
+    this.http.get(this.BASE_URL + '/products').subscribe(
+      (data) => {
+        this.products = data;
+      }
+    );
   }
 
   selectedCategory: Category | null = null;

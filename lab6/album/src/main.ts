@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 bootstrapApplication(AppComponent, {
   providers: [
-    provideRouter(routes), // Указываем маршруты
-    importProvidersFrom(HttpClientModule), // Подключаем HttpClient
+    provideRouter(routes),
+    importProvidersFrom(HttpClientModule),
   ],
 }).catch((err) => console.error(err));
